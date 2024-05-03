@@ -10,8 +10,8 @@
 .intro {
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.452);
     border-radius: 20px;
-    height: 50vb auto;
-    max-width: 70vb;
+    height: auto;
+    max-width: 65vb;
     display: inline-block;
     font-family: 'Poppins';
     padding-bottom: 50px;
