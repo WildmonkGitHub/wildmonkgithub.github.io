@@ -30,8 +30,14 @@
     padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 10px;
+}
+
+.allintro {
+    margin-left: 0px;
+    display: inline-block;
 }
 
 .barintro {
