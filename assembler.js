@@ -12,16 +12,7 @@ function age() {
     } else {
         Age = (date.getFullYear() - 2012) - 1
     }
-    return "<span class='bold'>Age: </span>" + Age
-}
-
-function gradesetup() {
-    if (Age > 5) {
-        return "<span class='bold'>Grade: </span>" + grade[Age-1] 
-    } else {
-        return "You are pre-primary child. Go to kintergarden or dustbin."
-    }
+    return Age
 }
 
 document.getElementById("age").innerHTML = age()
-document.getElementById("grade").innerHTML = gradesetup()
