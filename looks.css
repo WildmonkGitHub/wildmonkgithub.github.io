@@ -9,11 +9,16 @@
 }
 
 @keyframes movein {
-    from {font-size: 30px;}
-    to {font-size: 34px;}
+    from {font-size: 28px;}
+    to {font-size: 32px;}
 }
 
-#hd-1, #hd1 {
+#hd-s {
+    inline-size: auto;
+    display: inline-block;
+}
+
+#hd-1, #hd1, #hd-s {
     animation-name: movein;
     animation-duration: 1.2s;
     animation-timing-function: linear;
