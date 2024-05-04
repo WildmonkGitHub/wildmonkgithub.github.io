@@ -9,13 +9,24 @@
 }
 
 @keyframes movein {
-    from {font-size: 28px;}
-    to {font-size: 32px;}
+    from {font-size: 30px;}
+    to {font-size: 34px;}
 }
 
-#hd-s {
+@keyframes movein2 {
+    from {font-size: 33px;}
+    to {font-size: 35px;}
+}
+
+#hd-s, #hd-y {
     inline-size: auto;
     display: inline-block;
+    line-height: 0.9;
+    animation-name: movein2;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #hd-1, #hd1, #hd-s {
