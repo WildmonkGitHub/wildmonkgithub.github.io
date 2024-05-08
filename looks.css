@@ -18,6 +18,10 @@
     to {font-size: 35px;}
 }
 
+@keyframes movein3 {
+    from {font-size: 35px;}
+    to {font-size: 37px;}
+}
 #hd-s, #hd-y {
     inline-size: auto;
     display: inline-block;
@@ -29,8 +33,16 @@
     animation-direction: alternate;
 }
 
-#hd-1, #hd1, #hd-s {
+#hd-s {
     animation-name: movein;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#hd-s, #hd-y {
+    animation-name: movein3;
     animation-duration: 1.2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -118,4 +130,44 @@ body {
 
 span {
     line-height: 3.6vb;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    position: fixed;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-right: 2px;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+#opt1 {
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    position: fixed;
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin-left: -900px;
+    color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 75px;
+    padding-right: 100px;
+    border-radius: 100px;
+}
+
+#opt1:hover {
+    color: black;
+    background-color: white;
+}
+
+#imagefav {
+    height: 50px;
+    transition: 0.5s;
+}
+
+#imagefav:hover {
+    height: 65px;
 }
