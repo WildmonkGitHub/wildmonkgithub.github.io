@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wildmonk - GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./lib/favicon.png">
+  </head>
+<body style="background-color: black;">
+  <link rel="stylesheet" href="./looks.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <span id="menu" title="Menu">
+    <img src="./lib/favicon.png" height="70" id="imagefav" draggable="false" title="Menu" onClick="showmedia()">
+  </span>
+  <span id="menuopt">
+    <a href="./index.html"><span id="opt1">Home</span></a>
+  </span>
+  <style>
+    h1 {font-size: 120px; font-family: 'Poppins'; font-weight: 800;}
+    #menu, #opt1 {position: fixed; top: 10px;}
+    h2, h3 {font-family: 'Poppins'; color:white;}
+    @keyframes colorchange {
+        0% {color: red;} 
+        25% {color: yellow;} 
+        40% {color:greenyellow;} 
+        75% {color: aqua;} 
+        100% {color:deeppink;}}
+
+    @keyframes colorchange2 {
+        0% {color:deeppink;} 
+        25% {color: aqua;} 
+        40% {color:greenyellow;} 
+        75% {color: yellow;} 
+        100% {color: red;}}
+    h1 {animation-name: colorchange; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;}
+    h2 {
+        animation-name: colorchange2; animation-duration: 1.5s; animation-timing-function: linear; animation-iteration-count: infinite; 
+    }
+    body {background-image: none;}
+    @keyframes popup {to {color: white;}}
+    a {animation-name: popup; animation-duration: 0.5s; animation-delay: 6s; font-family: 'Poppins'; font-size: 20px; color: black;animation-fill-mode: both;}
+    h3 {animation-name: popup; animation-duration: 0.5s; animation-delay: 6s; animation-fill-mode: both; color:black;}
+  </style>
+  <center>
+    <h1></h1>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><h3>Click here to leave</h3></a>
+  </center>
+  <script type="text/javascript" src="./animates.js"></script>
+  <script>
+    let c = 0;
+    let w1 = "404";
+    let d = setInterval(entrytip, 200)
+    const q1 = document.getElementsByTagName("h1")[0]
+    function entrytip() {
+        if (c < 3) {
+            q1.innerHTML += w1[c];
+        } else {
+            clearInterval(d)
+        }
+        c++
+    }
+
+    let r = 0;
+    let s = setTimeout(start1, 700);
+    let w2 = "४०४";
+    function start1() {let e = setInterval(entrytip2, 200);}
+    const w3 = document.getElementsByTagName("h2")[0]
+    function entrytip2() {
+        if (r < 3) {
+            w3.innerHTML += w2[r];
+        } else {
+            clearInterval(e)
+        }
+        r++
+    }
+
+    let k = 0;
+    let sn = setTimeout(start2, 1800);
+    let wpl = "Not found...";
+    function start2() {let e = setInterval(entrytip3, 80);}
+    const w4 = document.getElementsByTagName("h2")[1]
+    function entrytip3() {
+        if (k < 12) {
+            w4.innerHTML += wpl[k];
+        } else {
+            clearInterval(e)
+        }
+        k++
+    }
+
+    let ks = 0;
+    let sn1 = setTimeout(start3, 3000);
+    let wpl2 = "Get out!";
+    function start3() {let e = setInterval(entrytip4, 80);}
+    const w45 = document.getElementsByTagName("h2")[2]
+    function entrytip4() {
+        if (ks < 8) {
+            w45.innerHTML += wpl2[ks];
+        } else {
+            clearInterval(e)
+        }
+        ks++
+    }
+
+    let ks1 = 0;
+    let sn11 = setTimeout(start4, 4000);
+    let wpl22 = "Bye Bye!";
+    function start4() {let e = setInterval(entrytip5, 80);}
+    const w451 = document.getElementsByTagName("h2")[3]
+    function entrytip5() {
+        if (ks1 < 8) {
+            w451.innerHTML += wpl22[ks1];
+        } else {
+            clearInterval(e)
+        }
+        ks1++
+    }
+  </script>
+</body>
+</html>

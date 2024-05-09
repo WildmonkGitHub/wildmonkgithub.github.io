@@ -19,8 +19,8 @@
 }
 
 @keyframes movein3 {
-    from {font-size: 35px;}
-    to {font-size: 37px;}
+    from {font-size: 37px;}
+    to {font-size: 40px;}
 }
 #hd-s, #hd-y {
     inline-size: auto;
@@ -85,6 +85,9 @@
 
 body {
     background-image: linear-gradient(#006779d2, #01accad2);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
 }
 
 .intro {
@@ -93,7 +96,7 @@ body {
     background-image: linear-gradient(#69E1D0, #00badb);
     border-radius: 10px;
     max-width: 63.4vb;
-    max-height: 63.4vb;
+    max-height: 630px;
     display: inline-block;
     font-family: 'Poppins';
     padding-bottom: 50px;
