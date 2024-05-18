@@ -6,34 +6,43 @@
     <link rel="icon" type="image/x-icon" href="./lib/favicon.png">
   </head>
 <body>
-  <link rel="stylesheet" href="./looks.css">
+  <link rel="stylesheet" href="looks.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <span id="menu" title="Menu">
-    <img src="./lib/favicon.png" height="70" id="imagefav" draggable="false" title="Menu" onClick="showmedia()">
-  </span>
-  <span id="menuopt">
-    <a href="./updates.html"><span id="opt1">Updates</span></a>
-  </span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <center>
-    <span class="barintro" id="b1">
-      <span id="hd-1" style="font-size: 30px; font-weight: 800; text-align:center;">WELCOME TO WILDMONK</span>
+    <span id="b1">
+      <span id="hd-1" style="font-size:16px;">Welcome to Wildmonk's Website</span>
     </span>
-  </center><br>
+  </center>
+    <span id="b2">
+      <span id="b3">
+      <a href="https://wildmonkgithub.github.io"><span id="hd-2" style="font-size:16px; text-align:center;">Home</span></a>
+      <span id="hd-2" style="font-size:16px; text-align:center;" onclick="applyProject()">Projects <i class="fa fa-caret-down"></i></span>
+      <span id="hd-2" style="font-size:16px; text-align:center;" onclick="applySettings()">Settings <i class="fa fa-caret-down"></i></span></span>
+    </span>
+    <span id="projectsmenu" style="display:none;">
+      <span id="hd-3" style="font-size:16px; text-align:center;" onClick="document.location = './updates.html'">Updates</span>
+    </span>
+    <span id="settingsmenu" style="display:none;">
+      <span id="hd-3" style="font-size:16px; text-align:center;" onClick="alert('Coming Soon...')">Enable Dark mode</span>
+    </span>
+  <br><br><br><br>
+  <center>
   <span class="allintro">
   <span class="intro">
     <center><img src="./lib/lion.jpeg" id="logo-w" class="logo" onmouseover="changePhoto()" onmouseleave="resetphoto()"></img><br><br>
     <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">HELLO! I AM WILDMONK</span>
     <br><br>
-    <span style="text-align:center; font-size: 2.5vb;">Hello its Wildmonk! The great Lion of India and not the king of Forest. Just Kidding! Nah nah! I am not actually lion, I am human living being biotic person lives in Big Bang, Multiverse, Universe, Milky Way, Solar System, Earth, Asia, India, Maharashtra, Pune.</span></center>
+    <span style="text-align:center; font-size: 17px;">Hello its Wildmonk! The great Lion of India and not the king of Forest. Just Kidding! Nah nah! I am not actually lion, I am human living being biotic person lives in Big Bang, Multiverse, Universe, Milky Way, Solar System, Earth, Asia, India, Maharashtra, Pune.</span></center>
   </span>
   <span class="intro" id="about">
     <center><img src="./lib/scratch.png" id="logo-s" class="logo"></img><br><br>
     <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">ABOUT ME</span>
     <br><br></center>
-    <span style="font-size: 2.5vb;">
-      <div id="sector" style="padding-left: 10px;">
+    <span style="font-size: 17px;">
+      <div id="sector" style="padding-left: 10px; text-align:left;">
         <b>Name: </b><span id="name">Anshuman Tripathi</span><br>
         <b>Age: </b><span id="age"></span><br>
         <b>Nationality: </b><span id="nationality">Indian</span><br>
@@ -49,8 +58,8 @@
     <center><img src="./lib/hobbies.png" id="logo-h" class="logo"></img><br><br>
     <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">HOBBIES</span>
     <br><br>
-    <span style="text-align:center; font-size: 2.5vb;">Playing Cricket, Chess, Carrom, Football, Basketball; Watching TV shows, Cartoons, Animes, Funny Comedies; Computering some Coding, Programming, Scratching the blocks; Programming Languages I like: JavaScript, C, HTML, CSS, Visual Basic, Scratch, Python.</span></center>
-  </span></span><br><br>
+    <span style="text-align:center; font-size: 17px;">Playing Cricket, Chess, Carrom, Football, Basketball; Watching TV shows, Cartoons, Animes, Funny Comedies; Computering some Coding, Programming, Scratching the blocks; Programming Languages I like: JavaScript, C, HTML, CSS, Visual Basic, Scratch, Python.</span></center>
+  </span></span></center><br><br>
   <center>
     <span class="barintro">
       <span id="hd-s" style="font-size: 30px; font-weight: 800; text-align:center;">MY SCRATCH PROJECTS</span><br>
@@ -65,11 +74,6 @@
       <span>There are some more in official <a href="https://youtube.com/c/WildmonkLion" style="font-weight: 800; color:rgb(255, 2, 2);">YouTube</a> Page</span>
     </span>
   </center><br>
-  <center>
-    <span class="barintro" id="bar1" onClick="alert('Coming Soon...')">
-      <span id="mode" style="font-weight: 800;">Enable dark mode</span>
-    </span>
-  </center><br><br>
   <center style="font-family:'Poppins';">Made by Anshuman Tripathi</center><br>
   <script type="text/javascript" src="./assembler.js"></script>
   <script type="text/javascript" src="./projects.js"></script>
