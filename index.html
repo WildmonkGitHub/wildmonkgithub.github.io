@@ -7,89 +7,91 @@
   </head>
   <body>
     <link rel="stylesheet" href="looks.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <center>
-    <span id="b1">
-      <span id="hd-1" style="font-size:16px;">Welcome to Wildmonk's Website</span>
-    </span>
-  </center>
-    <span id="b2">
-      <span id="b3">
-      <a href="https://wildmonkgithub.github.io"><span id="hd-2" style="font-size:16px; text-align:center;">Home</span></a>
-      <span id="hd-2" style="font-size:16px; text-align:center;" onclick="applyProject()">Projects <i class="fa fa-caret-down"></i></span>
-      <span id="hd-2" style="font-size:16px; text-align:center;" onclick="applySettings()">Settings <i class="fa fa-caret-down"></i></span></span>
-    </span>
-    <span id="projectsmenu" style="display:none;">
-      <span id="hd-3" style="font-size:16px; text-align:center;" onClick="document.location = './updates.html'">Updates</span>
-    </span>
-    <span id="settingsmenu" style="display:none;">
-      <span id="hd-3" style="font-size:16px; text-align:center;" onClick="alert('Coming Soon...')">Enable Dark mode</span>
-    </span>
-  <br><br><br><br>
-  <center>
-  <span class="allintro">
-  <span class="intro">
-    <center><img src="./lib/lion.jpeg" id="logo-w" class="logo" onmouseover="changePhoto()" onmouseleave="resetphoto()"></img><br><br>
-    <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">HELLO! I AM WILDMONK</span>
-    <br><br>
-    <span style="text-align:center; font-size: 17px;">Hello its Wildmonk! The great Lion of India and not the king of Forest. Just Kidding! Nah nah! I am not actually lion, I am human living being biotic person lives in Big Bang, Multiverse, Universe, Milky Way, Solar System, Earth, Asia, India, Maharashtra, Pune.</span></center>
-  </span>
-  <span class="intro" id="about">
-    <center><img src="./lib/scratch.png" id="logo-s" class="logo"></img><br><br>
-    <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">ABOUT ME</span>
-    <br><br></center>
-    <span style="font-size: 17px;">
-      <div id="sector" style="padding-left: 10px; text-align:left;">
-        <b>Name: </b><span id="name">Anshuman Tripathi</span><br>
-        <b>Age: </b><span id="age"></span><br>
-        <b>Nationality: </b><span id="nationality">Indian</span><br>
-        <b>Gender: </b><span id="gender">Male, him/his</span><br>
-        <b>Lives in: </b><span id="location">India, Maharashtra, Pune</span><br>
-        <b>Likes: </b><span id="likes">Coding, Watching Anime, Monsoon season</span><br>
-        <b>Dislikes: </b><span id="dislikes">Curd, Yogurt, Dancing</span><br>
-        <b>School: </b><span id="school">Beacon High School, Moshi</span>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    
+    <div class="section_header" id="header">
+      <div id="content_box">
+        <a href="index.html"><img id="logo" src="lib/lion.jpeg"></a>
       </div>
-    </span>
-  </span>
-  <span class="intro">
-    <center><img src="./lib/internet.jpg" id="logo-h" class="logo"></img><br><br>
-    <span id="hd1" style="font-size: 30px; font-weight: 800; text-align:center;">PLATFORMS</span>
-    <br><br>
-    <span style="text-align:center; font-size: 17px;">
-      Here are my platforms where you can find me and could chat.<br>
-      <a href="https://scratch.mit.edu/users/Wildmonk-2"><img src="lib/scratch.jpg" class="stalks" id="scratch"></a>
-      <a href="https://youtube.com/c/WildmonkLion"><img src="lib/yt.png" class="stalks" id="youtube"></a>
-      <a href="https://github.com/WildmonkGithub"><img src="lib/git.jpeg" class="stalks" id="github"></a>
-      <a href="https://www.chess.com/member/Wildmonk_Chess"><img src="lib/chess.jpg" class="stalks" id="chess"></a>
-    </span></center>
-  </span></span></center><br><br>
-  <center>
-    <span class="barintro">
-      <span id="hd-s" style="font-size: 30px; font-weight: 800; text-align:center;">MY SCRATCH PROJECTS</span><br>
-      <span id="projects"></span><br><br>
-      <span>There are some more in official <a href="https://scratch.mit.edu/users/Wildmonk-2" style="font-weight: 800; color:rgb(6, 131, 131);">Scratch</a> Page</span>
-    </span>
-  </center><br><br>
-  <center>
-    <span class="barintro">
-      <span id="hd-y" style="font-size: 30px; font-weight: 800; text-align:center;">MY YOUTUBE VIDEOS</span><br>
-      <span id="videos"></span><br><br>
-      <span>There are some more in official <a href="https://youtube.com/c/WildmonkLion" style="font-weight: 800; color:rgb(255, 2, 2);">YouTube</a> Page</span>
-    </span>
-  </center><br>
-  <center>
-    <span class="barintro">
-      <span id="hd-y" style="font-size: 30px; font-weight: 800; text-align:center;">MY FRIEND'S <a href="https://youtube.com/@Abmator" style="color:rgb(0, 83, 83)">ABMATOR</a> VIDEOS</span><br>
-      <span id="videos-a"></span><br><br>
-      <span>There are some more in official his <a href="https://youtube.com/@Abmator/videos" style="font-weight: 800; color:rgb(150, 2, 2);">YouTube</a> Page</span><br><span>Visit to his <a href="https://scratch.mit.edu/users/Abmator" style="font-weight: 800; color:rgb(0, 83, 83);">Scratch Profile</a> Page</span>
-    </span>
-  </center><br>
-  <center style="font-family:'Poppins';">Made by Anshuman Tripathi</center><br>
-  <script type="text/javascript" src="./assembler.js"></script>
-  <script type="text/javascript" src="./projects.js"></script>
-  <script type="text/javascript" src="./animates.js"></script>
-  </body>
+    </div>
+
+    <div class="section_body">
+      <div id="introduction_header">
+        <div id="section_banner">
+          <img id="introduction-banner" src="lib/banner.png">
+          <center><center id="text_1">I am a passionate Scratcher who makes Animation in Scratch and uploads a video on it. I have a very decent YouTube Channel and Two Scratch Accounts, One was got blocked by Scratch Team and other one is Online. If you don't understand my videos, navigate towards the characters info (Scroll down).</center></center>
+        </div>
+      </div>
+      <div id="characters_win">
+        <h1 id="characters_title">Characters</h1>
+        <hr size="3px" color="orange" id="hr_ch">
+        <center id="center_grid"><div id="characters_grid">
+          <div class="character_box" id="em1">
+            <div id="scratch_cat" class="character_boxgrid">
+              <img src="lib/Scratch Cat.svg" id="ch1" class="character">
+            </div>
+            Scratch Cat
+          </div>
+          <div class="character_box" id="em2">
+            <div id="pico" class="character_boxgrid">
+              <img src="lib/Pico.svg" id="ch2" class="character">
+            </div>
+            Pico
+          </div>
+          <div class="character_box" id="em3">
+            <div id="gobo" class="character_boxgrid">
+              <img src="lib/Gobo.svg" id="ch1" class="character">
+            </div>
+            Gobo
+          </div>
+          <div class="character_box" id="em4">
+            <div id="giga" class="character_boxgrid">
+              <img src="lib/Giga.svg" id="ch2" class="character">
+            </div>
+            Giga
+          </div>
+          <div class="character_box" id="em5">
+            <div id="tera" class="character_boxgrid">
+              <img src="lib/Tera.svg" id="ch1" class="character">
+            </div>
+            Tera
+          </div>
+          <div class="character_box" id="em6">
+            <div id="nano" class="character_boxgrid">
+              <img src="lib/Nano.svg" id="ch2" class="character">
+            </div>
+            Nano
+          </div>
+        </div></center>
+        <center>
+          <div id="checkout_section">
+            <h1 id="checkout_heading">Featured Studio <span id="checkout_description">Checkout my new studio that I made that talks about wrong potions! The detailed description will be provided as soon as you will click on the button given below</span><a href="https://scratch.mit.edu/studios/35762285/" id="checkout_link">Checkout the studio >></a></h1>
+            <img src="https://uploads.scratch.mit.edu/get_image/gallery/35762285_480x360.png" id="checkout_image">
+            </div>
+          </div>
+        </center>
+        <div id="characters_win">
+          <h1 id="characters_title">Latest Videos</h1>
+          <hr size="3px" color="orange" id="hr_ch">
+          <center>
+            <div class="video_box">
+              <div class="video_latest" id="latest_1"></div>
+              <span id="span_video-1">Robert makes Coral Cry</span>
+              <span id="demo">12</span>
+            </div>
+          </center>
+      </div>
+    </div>
+    <script>
+      getText("backend_views.py");
+
+      async function getText(file) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        document.getElementById("demo").innerHTML = myText;
+      }
+    </script>
+  </body> 
 </html>
