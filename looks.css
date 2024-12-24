@@ -37,7 +37,7 @@ body {
 }
 
 #characters_win {
-    margin-top:100px;
+    margin-top:60px;
 }
 
 #text_1 {
@@ -52,6 +52,7 @@ body {
     grid-row:1;
     column-gap:40px;
     justify-content: center;
+    row-gap:20px;
 }
 
 .character_box {
@@ -209,12 +210,363 @@ body {
     box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
 }
 
+#a_latest_1 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1059864143_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_2 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1059875039_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_3 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1089570259_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_4 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1097700059_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_5 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1102811282_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_6 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1103448328_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_7 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1105809700_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_8 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1107017418_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_1 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/944951457_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_2 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/863918076_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_3 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/839528661_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_4 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/821918108_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_5 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/811094818_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_6 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/781204175_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_7 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/695801765_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#s_latest_8 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/695231398_432x324.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#a_latest_1, #a_latest_2, #a_latest_3, #a_latest_1, #a_latest_4, #a_latest_5, #a_latest_6, #a_latest_7, #a_latest_8, #s_latest_1, #s_latest_2, #s_latest_3, #s_latest_1, #s_latest_4, #s_latest_5, #s_latest_6, #s_latest_7, #s_latest_8 {
+    cursor:pointer;
+}
+
+.subscribe_channel {
+    background-color:rgb(22, 22, 22);
+    width:100%;
+    margin-top:40px;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    align-content: center;
+}
+
+#profile_pic {
+    background-image: url("https://yt3.googleusercontent.com/2u-6_0XDQ1A3R2pXXiMYkISa1_G6-QN0FBsG_dORZVm-isGM3_2VUrNGP7mL58I31nDGRlxz=s160-c-k-c0x00ffffff-no-rj");
+    height:140px;
+    width:140px;
+    background-size: cover;
+    border-radius:100px;
+    display: grid;
+    grid-column:1;
+    grid-row:1;
+}
+
+#profile_pic-2 {
+    background-image: url("https://yt3.googleusercontent.com/CMa8JozK4g52hZ763PzaG9T-46mneM_jGeY2wVjSeeJ1BP-lN44GxRIH0ZkctDGkRspZ6xot_A=s160-c-k-c0x00ffffff-no-rj");
+    height:140px;
+    width:140px;
+    background-size: cover;
+    border-radius:100px;
+    display: grid;
+    grid-column:1;
+    grid-row:1;
+}
+
+#profile_name {
+    color:white;
+    font-weight:500;
+    font-size:30px;
+    display:grid;
+    grid-column:2;
+    margin-left:120px;
+    text-align: left;
+    grid-row:1;
+}
+
+
+#subscribe_button, #subscribe_button-2 {
+    color:white;
+    background-color:rgb(223, 0, 0);
+    font-weight:500;
+    font-size:20px;
+    display: grid;
+    margin-top:20px;
+    padding: 12px 20px;
+    border-radius:5px;
+    text-align: center;
+}
+
+#subscribe_button:hover, #subscribe_button-2:hover {
+    background-color:rgb(44, 0, 0);
+    cursor:pointer;
+}
+
+#subscribers, #subscribers-2 {
+    color:grey;
+    font-size:20px;
+}
+
 #latest_1:hover {
-    background-image: url("https://i.ytimg.com/an_webp/OymDLjYbH3o/mqdefault_6s.webp?du=3000&sqp=COjWqbsG&rs=AOn4CLBXDJjSInAwT5nMGYojeTka6ihl6w");
+    background-image: url("https://i.ytimg.com/an_webp/OymDLjYbH3o/mqdefault_6s.webp?du=3000&sqp=CLz_qrsG&rs=AOn4CLDKEN-EZMK_CJY4MmvRsiB_LdxSHg");
+}
+
+#latest_2 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1088119023_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_2:hover {
+    background-image: url("https://i.ytimg.com/an_webp/s8KKudBC2fQ/mqdefault_6s.webp?du=3000&sqp=CNSsq7sG&rs=AOn4CLBtEai6ifyDvfcbT2Zj2GRYBJ11fQ");
+}
+
+#latest_3 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1077547209_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_3:hover {
+    background-image: url("https://i.ytimg.com/an_webp/IwnzoGWs4Mg/mqdefault_6s.webp?du=3000&sqp=CJCwq7sG&rs=AOn4CLDkJfP8LwfeGYSTJBhVK3lM-RQacA");
+}
+
+#latest_4 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1077545562_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_4:hover {
+    background-image: url("https://i.ytimg.com/an_webp/0YtL5LvX6aQ/mqdefault_6s.webp?du=3000&sqp=CNiOqrsG&rs=AOn4CLAH-kjhrvGDl8lPQvcnVY5-_CahXA");
+}
+
+#latest_5 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1077545295_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_5:hover {
+    background-image: url("https://i.ytimg.com/an_webp/_7jjEw6visU/mqdefault_6s.webp?du=3000&sqp=COidqrsG&rs=AOn4CLCXIXn2uS1nYUbOaa3MNv-dHpPmEQ");
+}
+
+#latest_6 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/1060606026_440x330.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_6:hover {
+    background-image: url("https://i.ytimg.com/an_webp/bVlyHaT_e_Q/mqdefault_6s.webp?du=3000&sqp=CMCmqrsG&rs=AOn4CLBBeAaiYFRloa8MawshsvzZu4KzFA");
+}
+
+#latest_7 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/839505254_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_7:hover {
+    background-image: url("https://i.ytimg.com/an_webp/h6UAEW00jSM/mqdefault_6s.webp?du=3000&sqp=CMyoqrsG&rs=AOn4CLAjzpgJDr_IZqN9sTiRfUZh3GTJrw");
+}
+
+#latest_8 {
+    width:280px;
+    height:200px;
+    transition: 0.5s;
+    background-image: url("https://uploads.scratch.mit.edu/get_image/project/984298414_480x360.png");
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.164);
+}
+
+#latest_8:hover {
+    background-image: url("https://i.ytimg.com/an_webp/WAd2cQdDE1w/mqdefault_6s.webp?du=3000&sqp=CJCEqrsG&rs=AOn4CLDa11deQCY8CWprxBe8IeQBsdEB_Q");
 }
 
 .video_box {
-    margin-top:40px;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.164);
     width:fit-content;
     height:fit-content;
@@ -222,10 +574,60 @@ body {
     padding-top:20px;
     padding-left:20px;
     padding-right:20px;
-    padding-bottom:100px;
+    display:inline-block;
+    margin-right:20px;
+    padding-bottom:20px;
 }
 
-#span_video-1 {
+#video_last {
+    margin-right:0px;
+}
+
+#views-1, #views-2, #views-3, #views-4, #views-5, #views-6, #views-7, #views-8, #likes-1, #likes-2, #likes-3, #likes-4, #likes-5, #likes-6, #likes-7, #likes-8 {
+    color:#b1adb9;
+}
+
+.video_section {
+    white-space: nowrap;
+    max-width:1010px;
+    padding: 20px 10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+@media screen and (max-width: 1055px) {
+    .video_section {
+        max-width:660px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .video_section {
+        max-width:320px;
+    }
+}
+
+.scroll_btn {
+    height:50px;
+    width:50px;
+    user-select: none;
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    margin-right:20px;
+    font-size:20px;
+    font-weight: 600;
+    border-radius: 100px;
+    box-shadow:0px 0px 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.scroll_btn:hover {
+    background-color: lightblue;
+}
+
+#span_video-1, #span_video-2 {
     padding-top:30px;
     display:inline-block;
     font-size:20px;
@@ -339,4 +741,89 @@ body {
 
 .character_boxgrid {
     margin-bottom:10px;
+}
+
+@media screen and (max-width:463px) {
+    #profile_pic {
+        grid-column:1;
+        grid-row:1;
+        justify-self: center;
+    }
+
+    .subscribe_channel {
+        height:500px;
+    }
+
+    #profile_name {
+        grid-column:1;
+        grid-row:2;
+        margin-left:0px;
+        margin-top:20px;
+        text-align: center;
+    }
+
+    #abmator {
+        display: none;
+    }
+}
+
+
+.home {
+    background-color:whitesmoke;
+    height:70px;
+    width:70px;
+    position:fixed;
+    right:30px;
+    bottom:40px;
+    color:black;
+    font-size:30px;
+    align-content: center;
+    text-align: center;
+    border-radius:100px;
+    cursor:pointer;
+    box-shadow: 0px 0px 5px 2px rgb(32, 32, 32);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home:hover {
+    background-color:#b1adb9;
+}
+.footer {
+    height:100px;
+    background-color:whitesmoke;
+    margin-top:30px;
+    padding-left:50px;
+    align-content: center;
+}
+
+#wiki_meta {
+    font-size:18px;
+    font-weight:400;
+    margin-right:50px;
+}
+
+#wiki_img {
+    height:300px;
+    display:grid;
+    grid-column:2;
+    grid-row:1;
+}
+
+#wiki_banner {
+    display:grid;
+}
+
+#wiki_head {
+    display:grid;
+    grid-column:1;
+    grid-row:1;
+}
+
+#wiki_header {
+    margin-left: 100px;
+    margin-right:100px;
+    display:grid;
 }
