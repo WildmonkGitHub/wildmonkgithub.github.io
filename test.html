@@ -3,380 +3,339 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pixorus Store</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<title>Help Scout Blog Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+:root{
+  --primary:#2563eb;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --light:#f3f4f6;
+  --border:#e5e7eb;
+}
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
 }
 
 body{
-    background:#f4f6f8;
-    color:#333;
+  color:var(--text);
+  background:#fff;
 }
-
-/* ================== LAYOUT ================== */
 
 .container{
-    display:flex;
-    height:100vh;
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
 }
 
-/* ================== SIDEBAR ================== */
+/* TOP NAV */
+.topbar{
+  background:#f9fafb;
+  border-bottom:1px solid var(--border);
+}
 
-.sidebar{
-    width:250px;
-    background:#fff;
-    padding:20px;
-    border-right:1px solid #eee;
-    overflow-y:auto;
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:70px;
 }
 
 .logo{
-    font-size:20px;
-    font-weight:600;
-    margin-bottom:25px;
-    letter-spacing:2px;
+  font-weight:700;
+  font-size:20px;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
-.sidebar ul{
-    list-style:none;
+.logo span{
+  color:var(--primary);
 }
 
-.sidebar ul li{
-    padding:12px 10px;
-    font-size:14px;
-    color:#666;
-    border-radius:6px;
-    cursor:pointer;
-    transition:0.2s;
+.nav-links{
+  display:flex;
+  gap:25px;
+  align-items:center;
+  font-size:14px;
+  color:#374151;
 }
 
-.sidebar ul li:hover{
-    background:#f0f3f7;
-    color:#000;
+.nav-links a{
+  text-decoration:none;
+  color:inherit;
 }
 
-/* ================== MAIN ================== */
-
-.main{
-    flex:1;
-    display:flex;
-    flex-direction:column;
+.right-nav{
+  display:flex;
+  align-items:center;
+  gap:15px;
 }
 
-/* ================== TOPBAR ================== */
-
-.topbar{
-    height:70px;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 30px;
-    border-bottom:1px solid #eee;
+.btn{
+  padding:10px 18px;
+  border-radius:6px;
+  font-size:14px;
+  cursor:pointer;
+  border:none;
 }
 
-.search-box{
-    width:400px;
-    position:relative;
+.btn-outline{
+  background:transparent;
+  border:1px solid var(--border);
 }
 
-.search-box input{
-    width:100%;
-    padding:10px 40px 10px 15px;
-    border-radius:20px;
-    border:1px solid #ddd;
-    outline:none;
+.btn-primary{
+  background:var(--primary);
+  color:#fff;
 }
 
-.search-box span{
-    position:absolute;
-    right:15px;
-    top:10px;
-    font-size:14px;
-    color:#999;
+/* SECOND NAV */
+.subnav{
+  background:#fff;
+  border-bottom:1px solid var(--border);
 }
 
-.user{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.user img{
-    width:35px;
-    height:35px;
-    border-radius:50%;
-}
-
-/* ================== CONTENT AREA ================== */
-
-.content{
-    display:flex;
-    padding:20px;
-    gap:20px;
-    overflow-y:auto;
-}
-
-/* ================== LEFT CONTENT ================== */
-
-.left{
-    flex:3;
+.subnav-links{
+  display:flex;
+  gap:25px;
+  height:55px;
+  align-items:center;
+  font-size:14px;
+  color:#374151;
 }
 
 /* HERO */
 .hero{
-    background:#bcd5d6;
-    border-radius:10px;
-    padding:40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+  padding:70px 0;
+  background:linear-gradient(to right,#ffffff,#eef2f7);
 }
 
-.hero-text h2{
-    font-size:28px;
-    margin-bottom:10px;
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:20px;
 }
 
-.hero-text p{
-    font-size:14px;
-    margin-bottom:15px;
+.hero p{
+  font-size:18px;
+  color:var(--muted);
+  max-width:700px;
+  line-height:1.6;
+  margin-bottom:40px;
 }
 
-.hero img{
-    width:250px;
+.categories{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
-/* mini cards */
-.mini-cards{
-    margin-top:20px;
-    display:flex;
-    gap:15px;
+.cat-btn{
+  background:#f3f4f6;
+  padding:14px 22px;
+  border-radius:8px;
+  font-weight:500;
+  color:#374151;
+  border:1px solid var(--border);
+  cursor:pointer;
 }
 
-.mini{
-    flex:1;
-    background:#fff;
-    border-radius:10px;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* POSTS */
+.section{
+  padding:60px 0;
 }
 
-.mini img{
-    width:70px;
+.section-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
 }
 
-/* DEALS */
-.deals{
-    margin-top:30px;
+.section-header h2{
+  font-size:24px;
 }
 
-.deals-header{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:15px;
+.section-header a{
+  font-size:14px;
+  color:var(--primary);
+  text-decoration:none;
 }
 
-.products{
-    display:flex;
-    gap:15px;
+.grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
 }
 
-.product{
-    background:#fff;
-    padding:15px;
-    border-radius:10px;
-    width:160px;
-    text-align:center;
+.card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid var(--border);
 }
 
-.product img{
-    width:100px;
-    height:100px;
-    object-fit:cover;
+.card img{
+  width:100%;
+  display:block;
 }
 
-.product h4{
-    font-size:13px;
-    margin:10px 0;
+.card-content{
+  padding:20px;
 }
 
-.price{
-    font-size:13px;
-    color:#555;
+.label{
+  font-size:12px;
+  font-weight:600;
+  color:var(--muted);
+  letter-spacing:1px;
+  margin-bottom:10px;
 }
 
-/* ================== RIGHT PANEL ================== */
-
-.right{
-    flex:1;
+.card h3{
+  font-size:20px;
+  margin-bottom:12px;
 }
 
-.panel{
-    background:#fff;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:20px;
+.card p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.6;
 }
 
-.panel img{
-    width:100%;
-    border-radius:8px;
-    margin-top:10px;
+.side-post{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.side-card img{
+  border-radius:8px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:768px){
+  .nav-links{
+    display:none;
+  }
+  .hero h1{
+    font-size:32px;
+  }
+  .hero{
+    padding:50px 0;
+  }
 }
 </style>
 </head>
 <body>
 
-<div class="container">
-
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="logo">PIXORUS</div>
-        <ul>
-            <li>Traditional Wear</li>
-            <li>Western Wear</li>
-            <li>Swim & Beachwear</li>
-            <li>Winter & Seasonal Wear</li>
-            <li>Beauty & Grooming</li>
-            <li>Jewellery</li>
-            <li>Personal care Appliances</li>
-            <li>International Brands</li>
-            <li>Foot Wear</li>
-            <li>Watches</li>
-            <li>Accessories</li>
-        </ul>
+<!-- TOP NAV -->
+<div class="topbar">
+  <div class="container nav">
+    <div class="logo">
+      <span>▰▰</span> HelpScout
     </div>
 
-    <!-- MAIN -->
-    <div class="main">
-
-        <!-- TOPBAR -->
-        <div class="topbar">
-            <div class="search-box">
-                <input type="text" placeholder="Search product">
-                <span>🔍</span>
-            </div>
-
-            <div class="user">
-                <span>Chart</span>
-                <span>Orders</span>
-                <img src="https://randomuser.me/api/portraits/men/32.jpg">
-            </div>
-        </div>
-
-        <!-- CONTENT -->
-        <div class="content">
-
-            <!-- LEFT -->
-            <div class="left">
-
-                <!-- HERO -->
-                <div class="hero">
-                    <div class="hero-text">
-                        <p>Biggest Offer Revealed</p>
-                        <h2>MORE DEALS INSIDE <br> UP TO 50% OFF</h2>
-                        <p>Wishlist Now →</p>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1582582429416-ec9e4f1bfbf1">
-                </div>
-
-                <!-- MINI CARDS -->
-                <div class="mini-cards">
-                    <div class="mini">
-                        <div>
-                            <p>UP TO 30% OFF</p>
-                            <h4>Hand Purses</h4>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
-                    </div>
-
-                    <div class="mini">
-                        <div>
-                            <p>Explore Biggest Discount</p>
-                            <h4>Watches</h4>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d">
-                    </div>
-
-                    <div class="mini">
-                        <div>
-                            <p>Don't Miss</p>
-                            <h4>Year End Sale</h4>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657">
-                    </div>
-                </div>
-
-                <!-- DEALS -->
-                <div class="deals">
-                    <div class="deals-header">
-                        <h3>Deals of the Day</h3>
-                        <span>20:45:12 Left</span>
-                    </div>
-
-                    <div class="products">
-                        <div class="product">
-                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa">
-                            <h4>Leather Bag</h4>
-                            <div class="price">$45</div>
-                        </div>
-
-                        <div class="product">
-                            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6">
-                            <h4>Face Cream</h4>
-                            <div class="price">$12</div>
-                        </div>
-
-                        <div class="product">
-                            <img src="https://images.unsplash.com/photo-1519183071298-a2962e402c04">
-                            <h4>Camera</h4>
-                            <div class="price">$350</div>
-                        </div>
-
-                        <div class="product">
-                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
-                            <h4>Kids Shoes</h4>
-                            <div class="price">$29</div>
-                        </div>
-
-                        <div class="product">
-                            <img src="https://images.unsplash.com/photo-1600185366005-9d9f5c84f5e3">
-                            <h4>Wallet</h4>
-                            <div class="price">$20</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- RIGHT -->
-            <div class="right">
-
-                <div class="panel">
-                    <h4>Recently Viewed</h4>
-                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
-                </div>
-
-                <div class="panel">
-                    <h4>Suggestions for You</h4>
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-                </div>
-
-            </div>
-
-        </div>
+    <div class="nav-links">
+      <a href="#">Solutions ▼</a>
+      <a href="#">Product ▼</a>
+      <a href="#">Resources ▼</a>
+      <a href="#">Pricing</a>
     </div>
+
+    <div class="right-nav">
+      <button class="btn btn-outline">Get a Demo</button>
+      <button class="btn btn-primary">Free Trial</button>
+    </div>
+  </div>
 </div>
+
+<!-- SUB NAV -->
+<div class="subnav">
+  <div class="container subnav-links">
+    <a href="#">Latest Articles</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Growth & Culture</a>
+    <a href="#">Inside Help Scout</a>
+    <a href="#">Support Toolkit</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>The Help Scout Blog</h1>
+    <p>
+      Get tips and advice on delivering exceptional customer service, engaging
+      and delighting your customers, and building a customer-centric company.
+    </p>
+
+    <div class="categories">
+      <div class="cat-btn">Customer Service</div>
+      <div class="cat-btn">Growth & Culture</div>
+      <div class="cat-btn">Inside Help Scout</div>
+      <div class="cat-btn">Support Toolkit</div>
+    </div>
+  </div>
+</section>
+
+<!-- POSTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Most Recent Posts</h2>
+      <a href="#">View All Posts →</a>
+    </div>
+
+    <div class="grid">
+      
+      <!-- MAIN POST -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+        <div class="card-content">
+          <div class="label">CUSTOMER SERVICE</div>
+          <h3>Customer Engagement Software: 12 Tools to Try in 2023</h3>
+          <p>
+            Building great customer relationships can be tough! Here are 12
+            customer engagement software tools to help you better connect
+            with customers.
+          </p>
+        </div>
+      </div>
+
+      <!-- SIDE POSTS -->
+      <div class="side-post">
+        <div class="card side-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+          <div class="card-content">
+            <div class="label">CUSTOMER SERVICE</div>
+            <h3>Beyond Tickets: How Support Teams Impact Revenue</h3>
+          </div>
+        </div>
+
+        <div class="card side-card">
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c">
+          <div class="card-content">
+            <div class="label">CUSTOMER SERVICE</div>
+            <h3>Artificial Integrity: Trust, AI, and Customer Service</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
