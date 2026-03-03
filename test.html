@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixorus Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#333;
+}
+
+/* ================== LAYOUT ================== */
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* ================== SIDEBAR ================== */
+
+.sidebar{
+    width:250px;
+    background:#fff;
+    padding:20px;
+    border-right:1px solid #eee;
+    overflow-y:auto;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:25px;
+    letter-spacing:2px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:12px 10px;
+    font-size:14px;
+    color:#666;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.sidebar ul li:hover{
+    background:#f0f3f7;
+    color:#000;
+}
+
+/* ================== MAIN ================== */
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ================== TOPBAR ================== */
+
+.topbar{
+    height:70px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    border-bottom:1px solid #eee;
+}
+
+.search-box{
+    width:400px;
+    position:relative;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px 40px 10px 15px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    outline:none;
+}
+
+.search-box span{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:14px;
+    color:#999;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.user img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+/* ================== CONTENT AREA ================== */
+
+.content{
+    display:flex;
+    padding:20px;
+    gap:20px;
+    overflow-y:auto;
+}
+
+/* ================== LEFT CONTENT ================== */
+
+.left{
+    flex:3;
+}
+
+/* HERO */
+.hero{
+    background:#bcd5d6;
+    border-radius:10px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero-text h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.hero-text p{
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.hero img{
+    width:250px;
+}
+
+/* mini cards */
+.mini-cards{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.mini{
+    flex:1;
+    background:#fff;
+    border-radius:10px;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.mini img{
+    width:70px;
+}
+
+/* DEALS */
+.deals{
+    margin-top:30px;
+}
+
+.deals-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.products{
+    display:flex;
+    gap:15px;
+}
+
+.product{
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    width:160px;
+    text-align:center;
+}
+
+.product img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+.product h4{
+    font-size:13px;
+    margin:10px 0;
+}
+
+.price{
+    font-size:13px;
+    color:#555;
+}
+
+/* ================== RIGHT PANEL ================== */
+
+.right{
+    flex:1;
+}
+
+.panel{
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.panel img{
+    width:100%;
+    border-radius:8px;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="logo">PIXORUS</div>
+        <ul>
+            <li>Traditional Wear</li>
+            <li>Western Wear</li>
+            <li>Swim & Beachwear</li>
+            <li>Winter & Seasonal Wear</li>
+            <li>Beauty & Grooming</li>
+            <li>Jewellery</li>
+            <li>Personal care Appliances</li>
+            <li>International Brands</li>
+            <li>Foot Wear</li>
+            <li>Watches</li>
+            <li>Accessories</li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="search-box">
+                <input type="text" placeholder="Search product">
+                <span>🔍</span>
+            </div>
+
+            <div class="user">
+                <span>Chart</span>
+                <span>Orders</span>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- LEFT -->
+            <div class="left">
+
+                <!-- HERO -->
+                <div class="hero">
+                    <div class="hero-text">
+                        <p>Biggest Offer Revealed</p>
+                        <h2>MORE DEALS INSIDE <br> UP TO 50% OFF</h2>
+                        <p>Wishlist Now →</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1582582429416-ec9e4f1bfbf1">
+                </div>
+
+                <!-- MINI CARDS -->
+                <div class="mini-cards">
+                    <div class="mini">
+                        <div>
+                            <p>UP TO 30% OFF</p>
+                            <h4>Hand Purses</h4>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+                    </div>
+
+                    <div class="mini">
+                        <div>
+                            <p>Explore Biggest Discount</p>
+                            <h4>Watches</h4>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d">
+                    </div>
+
+                    <div class="mini">
+                        <div>
+                            <p>Don't Miss</p>
+                            <h4>Year End Sale</h4>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657">
+                    </div>
+                </div>
+
+                <!-- DEALS -->
+                <div class="deals">
+                    <div class="deals-header">
+                        <h3>Deals of the Day</h3>
+                        <span>20:45:12 Left</span>
+                    </div>
+
+                    <div class="products">
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa">
+                            <h4>Leather Bag</h4>
+                            <div class="price">$45</div>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6">
+                            <h4>Face Cream</h4>
+                            <div class="price">$12</div>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1519183071298-a2962e402c04">
+                            <h4>Camera</h4>
+                            <div class="price">$350</div>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
+                            <h4>Kids Shoes</h4>
+                            <div class="price">$29</div>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://images.unsplash.com/photo-1600185366005-9d9f5c84f5e3">
+                            <h4>Wallet</h4>
+                            <div class="price">$20</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="right">
+
+                <div class="panel">
+                    <h4>Recently Viewed</h4>
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+                </div>
+
+                <div class="panel">
+                    <h4>Suggestions for You</h4>
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
